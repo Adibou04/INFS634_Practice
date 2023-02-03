@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <!-- This is the head section which contains metadata of website.-->
     <head>
-        <title>In-Class Exercise</title>
-        <style>
-            body{background-color: darkred;}
-        </style>
-        <link rel="icon" type="image/x-icon" href="Assets/img/Anne copie.jpg">
+        <title>In-Class Exercise</title> <!--Title will appear on tab-->
+
+       <link rel="stylesheet" href="Assets/css/Mystyle.css"> <!--links to css file for style-->
+
+        <link rel="icon" type="image/x-icon" href="Assets/img/Anne copie.jpg"> <!--Icon will also appear on tab-->
     </head>
+
+    <!-- The body is where it's at. Stuff in body tag will appear on page-->
     <body>
+        <!-- This section was created to explain bookmark feat.-->
         <section id="head1">
             <a href="#head2">Go to bottom</a>
-
         </section>
+
+        <!-- This demonstrates different headers-->
         <section id="header-section">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -19,19 +24,86 @@
             <h4>Heading 4</h4>
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
-            <hr>
-            <h1>&#65;</h1>
+            <hr> <!-- line break-->
+
+            <h1>&#65;</h1> <!-- html character tag, can be used for emojis-->
+
+            <!-- This shows p and br html tags and inline items like bold-->
             <p>This is a paragraph <br>
                 <em>Emphasis</em> <br>
                 <b>bold text</b> <br>
                 <u>underlined text</u> <br>
                 <mark>highlighted text</mark>
             </p>
-            <a href="https://mcgill.ca" target="_blank" title="Click here for McGill website">Link Here</a> 
+
+            <!-- How to create a hyperlink-->
+            <a href="https://mcgill.ca" target="_blank" title="Click here for McGill website">Link Here</a> <br>
+            <img src="Assets/img/Anne copie.jpg" alt="sample image" width="200px" height="300px">
         </section>
-        <section>
+
+        <!-- how to embed a website or a pdf-->
+        <iframe src="Assets/pdf/Assign1_WebsiteProposal_ExLibrisCollection.pdf" title="A1 PDF"></iframe>
+        
+        <section> <!-- The cliché first html text sample HeLLOO WORLDD it's a me-->
             Hello <i>World 2!</i>
         </section>
+
+        <!-- How to embed a video (does not matter the order for the attributes in video tag e.g. muted, controls, etc.)-->
+        <video autoplay muted controls>
+            <source src="https://pqina.nl/media/sample-mp4-file.mp4" type="video/mp4">
+        </video>
+
+        <!-- How to create different type of lists-->
+        <ul> <!-- unordered list i.e. bullet points-->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ol> <!-- ordered list i.e. numbered-->
+            <li>Item a</li>
+            <li>Item b</li>
+            <li>Item c</li>
+        </ol>
+        <dl> <!-- descriptive list-->
+            <dt>Item 1</dt>
+                <dd>Explain Item 1</dd>
+            <dt>Item 2</dt>
+                <dd>Explain Item 2</dd>
+        </dl>
+
+        <!--How to create a table-->
+        <table border="1px">
+            <tr> <!--row 1-->
+                <th>Heading 1</th> <!--Header tag-->
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr>
+            <tr> <!--row 2-->
+                <td rowspan="2">Item 1</td> <!--Merge two rows-->
+                <td colspan="2">Item 2</td> <!--Merge two collums-->
+            </tr>
+            <tr> <!--row 3-->
+                <td>Item 3</td> <!--data tag-->
+                <td>Item 4</td>
+            </tr>
+        </table>
+
+        <br> <!-- Let's add some space-->
+        <br>
+        <br>
+     
+        <!--How to create a form, useful for the image display page of our website and search feat. 
+        See powerpoint for Feb 3rd for all possibilities-->
+        <form method="GET" action="#" autocomplete="on"> <!-- action should have html file that works with get form or should be displayed once submitted (# is just refresh page)-->
+            <label for="#firstnamebox">First Name</label>
+            <input id="firstnamebox" name="Fname" type="text">
+            <input id="colourbox" name="colour" type="color"> <!--need to use american spelling-->
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+
+        
+        <!-- this is another bookmark section, teleport back to the top of the page-->
         <section id="head2">
             <a href="#head1">Return to top</a>
         </section>

@@ -1,0 +1,27 @@
+body{ /*This targets the entire body*/
+    background-color: rgb(201, 168, 115);
+    color: darkred;  
+    background-image: url(../img/Anne\ copie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+/* Below is for the bookmarks so the bg is darkred and text is offwhite*/
+
+#head1{ /*This targets an id*/
+    background-color: darkred;
+}
+#head2{
+    background-color: darkred;
+}
+section>a{ /* this targets child elements e.g. all a element in a section block*/
+    color:rgb(248, 238, 238);
+}
+
+h1{ /*This targets all h1 elements and adds a little red line on top of them*/
+    text-decoration:overline darkred 2px;
+}
+td{ /*This targets all td elements - makes text in table centered*/
+    text-align: center;
+}
